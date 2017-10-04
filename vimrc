@@ -72,6 +72,23 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+" ---------------
+"  specific file type
+"  --------------
+autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
+function! AutoSetFileHead()
+    " .sh
+    if &filetype == 'sh'
+        call setline(1, "\#!/bin/bash")
+    endif
+    " python
+    if &filetype == 'python'
+        call setline(1, "\#!/usr/bin/env python")
+        call append(1, "\# encoding: utf-8")
+    endif
+
+endfunc
+
 "-----------------
 " Plugin settings
 "-----------------
