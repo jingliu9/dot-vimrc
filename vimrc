@@ -14,7 +14,7 @@ syntax on
 "--------
 " color scheme
 set background=dark
-color solarized
+"color solarized
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -71,6 +71,11 @@ autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+" slient warnning of snipMate
+" see h:snipMate for infomration
+let g:snipMate = {}
+let g:snipMate.snippet_version = 1
 
 " ---------------
 "  specific file type
