@@ -21,6 +21,10 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 
+set colorcolumn=80
+highlight ColorColumn term=bold ctermbg=4 guibg=DarkBlue
+let &colorcolumn="80,".join(range(120,999),",")
+
 " search
 set incsearch
 "set highlight 	" conflict with highlight current line
