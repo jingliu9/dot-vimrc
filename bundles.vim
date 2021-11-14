@@ -40,6 +40,11 @@ Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 
 "--------------
+" Table Formatter
+"--------------
+Bundle 'dhruvasagar/vim-table-mode'
+
+"--------------
 " IDE features
 "--------------
 Bundle 'scrooloose/nerdtree'
