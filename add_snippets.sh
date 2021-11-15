@@ -1,24 +1,29 @@
 #! /bin/bash
 
+RED='\033[0;31m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
 function test_existence() {
     OP=$1
 	FNAME=$2
 	if grep -Fq "$OP" "$FNAME"
 	then
         # Found
-        echo "$OP existing, skip"
+        echo -e "${CYAN}${OP}${NC} existing, skip"
         return 1
 	fi
     # Not Found
-    echo "$OP not existing, will add"
+    echo -e "${RED}${OP}${NC} not existing, will add"
     return 0
 }
 
-# colored text in markdown
+# Markdown
 MD_SNIPPETS="./bundle/vim-snippets/snippets/markdown.snippets"
-test_existence cltext $MD_SNIPPETS
+## `colort`: colored text in markdown (actually the gened pdf)
+test_existence colort $MD_SNIPPETS
 retval=$?
 if [ "$retval" == 0 ]
 then
-    printf '\nsnippet cltext\n\t <span style="color: ${0:color};">TEXT</span>' >> $MD_SNIPPETS
+    printf '\nsnippet colort\n\t <span style="color: ${1:color};">${0:text}</span>' >> $MD_SNIPPETS
 fi
