@@ -81,6 +81,9 @@ let g:html_indent_style1 = "inc"
 let g:snipMate = {}
 let g:snipMate.snippet_version = 1
 
+" Markdown-compatible tables
+let g:table_mode_corner='|'
+
 " ---------------
 "  specific file type
 "  --------------

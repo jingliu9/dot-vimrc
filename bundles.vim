@@ -67,17 +67,17 @@ Bundle 'nvie/vim-togglemouse'
 " Syntax/Indent for language enhancement
 "----------------------------------------
 "------- web backend ---------
-Bundle '2072/PHP-Indenting-for-VIm'
-"Bundle 'tpope/vim-rails'
-Bundle 'lepture/vim-jinja'
-"Bundle 'digitaltoad/vim-jade'
+" Bundle '2072/PHP-Indenting-for-VIm'
+" Bundle 'tpope/vim-rails'
+" Bundle 'lepture/vim-jinja'
+" Bundle 'digitaltoad/vim-jade'
 
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
 " Bundle 'tpope/vim-haml'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'nono/jquery.vim'
+" Bundle 'nono/jquery.vim'
 " Bundle 'groenewege/vim-less'
 " Bundle 'wavded/vim-stylus'
 " Bundle 'nono/vim-handlebars'
