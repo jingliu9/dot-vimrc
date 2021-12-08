@@ -27,3 +27,16 @@ if [ "$retval" == 0 ]
 then
     printf '\nsnippet colort\n\t <span style="color: ${1:color};">${0:text}</span>' >> $MD_SNIPPETS
 fi
+
+
+test_existence codeblock-line $MD_SNIPPETS
+retval=$?
+if [ "$retval" == 0 ]
+then
+    printf '\n'
+    printf '\n# Use pandoc extension (fenced_code_attributes)' >> $MD_SNIPPETS
+    printf '\n# Also works for github' >> ${MD_SNIPPETS}
+    printf '\nsnippet codeblock-line' >> ${MD_SNIPPETS}
+    printf '\n\t~~~~ {#${1:name} .${2:lang} .numberLines startFrom="${0:line}"}' >> ${MD_SNIPPETS}
+    printf '\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' >> ${MD_SNIPPETS}
+fi
