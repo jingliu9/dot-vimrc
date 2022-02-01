@@ -21,14 +21,17 @@ function test_existence() {
 # Markdown
 MD_SNIPPETS="./bundle/vim-snippets/snippets/markdown.snippets"
 ## `colort`: colored text in markdown (actually the gened pdf)
+## my lua filter required
 test_existence colort $MD_SNIPPETS
 retval=$?
 if [ "$retval" == 0 ]
 then
+    print '\n'
     printf '\nsnippet colort\n\t <span style="color: ${1:color};">${0:text}</span>' >> $MD_SNIPPETS
 fi
 
 
+## `codeblock-line`: code block with line number (pandoc required)
 test_existence codeblock-line $MD_SNIPPETS
 retval=$?
 if [ "$retval" == 0 ]
@@ -39,4 +42,13 @@ then
     printf '\nsnippet codeblock-line' >> ${MD_SNIPPETS}
     printf '\n\t~~~~ {#${1:name} .${2:lang} .numberLines startFrom="${0:line}"}' >> ${MD_SNIPPETS}
     printf '\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' >> ${MD_SNIPPETS}
+fi
+
+## `underlinet`: underline text in gened pdf (pandoc required)
+test_existence underlinet $MD_SNIPPETS
+retval=$?
+if [ "$retval" == 0 ]
+then
+    printf '\n'
+    printf '\nsnippet underlinet\n\t <span class="underline">${0:text}</span>' >> $MD_SNIPPETS
 fi
