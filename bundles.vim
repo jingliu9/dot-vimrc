@@ -83,8 +83,10 @@ Bundle 'kchmck/vim-coffee-script'
 " Bundle 'nono/vim-handlebars'
 
 "------- markup language -------
-Bundle 'tpope/vim-markdown'
+" Bundle 'tpope/vim-markdown'
 " Bundle 'timcharper/textile.vim'
+Bundle 'preservim/vim-markdown'
+Bundle 'instant-markdown/vim-instant-markdown'
 
 "------- Ruby --------
 " Bundle 'tpope/vim-endwise'
