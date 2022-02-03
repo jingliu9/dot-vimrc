@@ -94,6 +94,9 @@ Bundle 'instant-markdown/vim-instant-markdown'
 "------- Go ----------
 Bundle 'fatih/vim-go'
 
+"------- Rust ----------
+Bundle 'rust-lang/rust.vim'
+
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'wlangstroth/vim-racket'
