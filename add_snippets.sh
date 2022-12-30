@@ -52,3 +52,14 @@ then
     printf '\n'
     printf '\nsnippet underlinet\n\t <span class="underline">${0:text}</span>' >> $MD_SNIPPETS
 fi
+
+## `flinediv`: a full line to divide text (pdf friendly)
+test_existence flinediv $MD_SNIPPETS
+retval=$?
+if [ "$retval" == 0 ]
+then
+    printf '\n# a full line generated in my generated pdf' >> ${MD_SNIPPETS}
+    printf '\nsnippet flinediv\n\t<span style="color: ${0:color};">------------------------------------------------------------------------------------------------------------------------------------------------------</span>' >> $MD_SNIPPETS
+fi
+
+
