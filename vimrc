@@ -68,6 +68,7 @@ autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
+" autocmd Filetype coq nnoremap ,, :CoqRunToCursor<CR>
 
 " syntax support
 autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
@@ -308,3 +309,6 @@ if has("gui_running")
     map <D-9> 9gt
     map <D-0> :tablast<CR>
 endif
+
+" spell
+:set spellfile=~/.vim/.personalspell.utf8.add
