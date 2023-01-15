@@ -309,3 +309,6 @@ if has("gui_running")
     map <D-9> 9gt
     map <D-0> :tablast<CR>
 endif
+
+" spell
+:set spellfile=~/.vim/.personalspell.utf8.add
