@@ -103,7 +103,8 @@ Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'vim-scripts/VimClojure'
 " Bundle 'rosstimson/scala-vim-support'
 Bundle "neovimhaskell/haskell-vim"
-Bundle "tounaishouta/coq.vim"
+" Bundle "tounaishouta/coq.vim"
+Bundle "whonore/Coqtail"
 
 "--------------
 " Color Schemes
