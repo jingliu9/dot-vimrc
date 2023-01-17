@@ -75,8 +75,8 @@ Bundle 'nvie/vim-togglemouse'
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
 " Bundle 'tpope/vim-haml'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
+" Bundle 'pangloss/vim-javascript'
+" Bundle 'kchmck/vim-coffee-script'
 " Bundle 'nono/jquery.vim'
 " Bundle 'groenewege/vim-less'
 " Bundle 'wavded/vim-stylus'
@@ -87,6 +87,7 @@ Bundle 'kchmck/vim-coffee-script'
 " Bundle 'timcharper/textile.vim'
 Bundle 'preservim/vim-markdown'
 Bundle 'instant-markdown/vim-instant-markdown'
+Bundle 'chrisbra/csv.vim'
 
 "------- Ruby --------
 " Bundle 'tpope/vim-endwise'
