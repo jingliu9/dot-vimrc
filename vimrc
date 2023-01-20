@@ -102,6 +102,9 @@ function! AutoSetFileHead()
 
 endfunc
 
+" format textwidth for specific file types
+au BufRead,BufNewFile *.tex,*.md,*.txt setlocal textwidth=80
+
 "-----------------
 " Plugin settings
 "-----------------

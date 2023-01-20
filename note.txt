@@ -1,3 +1,8 @@
 spellcheck
 - regen spell files
 - open vim, then `:mkspell ~/.vim/.personalspell.utf8.add`
+
+set textwdith
+- select (`v`)
+- `gq`
+- `h:gq`
