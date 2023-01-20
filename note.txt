@@ -1,6 +1,8 @@
 spellcheck
 - regen spell files
 - open vim, then `:mkspell ~/.vim/.personalspell.utf8.add`
+- `set spell spelllang=en_us`
+- `h:spell` or `h:spell-quickstart`
 
 set textwdith
 - select (`v`)
