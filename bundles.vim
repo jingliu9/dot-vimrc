@@ -11,10 +11,17 @@ Bundle 'gmarik/vundle'
 "------------------
 " Code Completions
 "------------------
-Bundle 'Shougo/neocomplcache'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
+if has('nvim')
+  Bundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Bundle 'Shougo/deoplete.nvim'
+  Bundle 'roxma/nvim-yarp'
+  Bundle 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 " snippets
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'

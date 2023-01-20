@@ -6,3 +6,7 @@ set textwdith
 - select (`v`)
 - `gq`
 - `h:gq`
+
+deocomplete
+- `:pythonx import sys; print(sys.path)`
+- `/usr/local/Cellar/python@3.10/3.10.2/bin/pip3 install pynvim`
