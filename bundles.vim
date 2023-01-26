@@ -96,8 +96,8 @@ Bundle 'preservim/vim-markdown'
 Bundle 'instant-markdown/vim-instant-markdown'
 Bundle 'chrisbra/csv.vim'
 
-"------- Ruby --------
-" Bundle 'tpope/vim-endwise'
+"------- R --------
+Bundle 'jalvesaq/Nvim-R'
 
 "------- Go ----------
 Bundle 'fatih/vim-go'
