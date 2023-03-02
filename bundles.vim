@@ -6,7 +6,8 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+" Bundle 'gmarik/vundle'
+Bundle 'jingliu9/vundle'
 
 "------------------
 " Code Completions
