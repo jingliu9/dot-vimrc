@@ -42,7 +42,8 @@ Bundle 'Lokaltog/vim-easymotion'
 "--------------
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'sjl/gundo.vim'
+Bundle 'mbbill/undotree'
+" Bundle 'sjl/gundo.vim' (not compatible anymore, alas)
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 
