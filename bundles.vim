@@ -1,65 +1,66 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
 " Bundle 'gmarik/vundle'
-Bundle 'jingliu9/vundle'
+" Bundle 'jingliu9/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 "------------------
 " Code Completions
 "------------------
-Bundle 'mattn/emmet-vim'
-Bundle 'Raimondi/delimitMate'
-Bundle 'ervandew/supertab'
+Plugin 'mattn/emmet-vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
 if has('nvim')
-  Bundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
-  Bundle 'Shougo/deoplete.nvim'
-  Bundle 'roxma/nvim-yarp'
-  Bundle 'roxma/vim-hug-neovim-rpc'
+  Plugin 'Shougo/deoplete.nvim'
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 0
 " snippets
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 "------ snipmate dependencies -------
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
 "------ header ------
-Bundle 'shanzi/autoHEADER'
+Plugin 'shanzi/autoHEADER'
 
 "-----------------
 " Fast navigation
 "-----------------
 " Bundle 'edsono/vim-matchit'
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/vim-easymotion'
 
 "--------------
 " Fast editing
 "--------------
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'mbbill/undotree'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mbbill/undotree'
 " Bundle 'sjl/gundo.vim' (not compatible anymore, alas)
-Bundle 'godlygeek/tabular'
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'godlygeek/tabular'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 "--------------
 " Table Formatter
 "--------------
-Bundle 'dhruvasagar/vim-table-mode'
+Plugin 'dhruvasagar/vim-table-mode'
 
 "--------------
 " IDE features
 "--------------
-Bundle 'scrooloose/nerdtree'
-Bundle 'humiaozuzu/TabBar'
-Bundle 'majutsushi/tagbar'
-Bundle 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'humiaozuzu/TabBar'
+Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
@@ -127,5 +128,7 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'fisadev/fisa-vim-colorscheme'
+
+call vundle#end()            " required
 
 filetype plugin indent on     " required!
